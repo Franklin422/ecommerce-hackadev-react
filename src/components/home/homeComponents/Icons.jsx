@@ -9,7 +9,7 @@ const Icons = () => {
     <div className="icon">
       <i className="bx bx-search"></i>
     </div>
-    <a href="carrinho.html" className="icon">
+    <a href="/login" className="icon">
       <i className="bx bx-shopping-bag"></i>
       <span className="d-flex">0</span>
     </a>
