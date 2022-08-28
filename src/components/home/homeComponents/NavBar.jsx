@@ -1,5 +1,5 @@
 import React from 'react';
-import Icons from './Icons';
+import Icons from './navBarComonents/Icons';
 import Logo from './navBarComonents/Logo';
 import MenuHamburger from './navBarComonents/MenuHamburger';
 import NavContato from './navBarComonents/NavContato';
