@@ -1,12 +1,31 @@
-import Template from "./components/templates/Template";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
+import ProductContainer from "./components/products/ProductContainer";
+import Template from "./components/templates/Template";
 
 function App() {
   return (
     <>
-      <Template>
-        <Home />
-      </Template>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Template>
+                <Home />
+              </Template>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <Template>
+                <ProductContainer />
+              </Template>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

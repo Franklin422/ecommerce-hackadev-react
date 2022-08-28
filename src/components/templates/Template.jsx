@@ -1,20 +1,18 @@
 import React from "react";
-import "../home/style.css";
-import Comunidades from "../footerComponents/Comunidades";
-import Information from "../footerComponents/Information";
-import LinksUteis from "../footerComponents/LinksUteis";
-import Banner from "../home/homeComponents/Banner";
-import Icons from "../footerComponents/Icons";
+import "../home/home.css";
+import Comunidades from "../footer/footerComponents/Comunidades";
+import Information from "../footer/footerComponents/Information";
+import LinksUteis from "../footer/footerComponents/LinksUteis";
+import Icons from "../footer/footerComponents/Icons";
 
 import NavBar from "../home/homeComponents/NavBar";
 
 const Template = ({ children }) => {
   return (
     <>
-      <header className="header" id="header">
+      <div className="navigation">
         <NavBar />
-        <Banner />
-      </header>
+      </div>
 
       {children}
 

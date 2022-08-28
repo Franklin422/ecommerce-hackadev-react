@@ -2,9 +2,9 @@
 const NavProdutos = () => {
   return (
     <li className="nav-item">
-    <a href="/" className="nav-link">Produtos</a>
+    <a href="/products" className="nav-link">Produtos</a>
   </li>
   )
 }
 
-export default NavProdutos
+export default NavProdutos;

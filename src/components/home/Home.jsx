@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./home.css";
 
 import Category1 from "../../assets/img/category1.png";
 import Category2 from "../../assets/img/category2.png";
@@ -14,9 +14,11 @@ import Product5 from "../../assets/img/product-5.jpg";
 import Product6 from "../../assets/img/product5.png";
 import Product7 from "../../assets/img/product6.png";
 import Product8 from "../../assets/img/product7.png";
+
 import Banner2 from "./homeComponents/Banner2";
 
 import Products from "./homeComponents/Products";
+import Banner from "./homeComponents/Banner";
 
 const Home = () => {
   const categories = [
@@ -129,6 +131,10 @@ const Home = () => {
 
   return (
     <>
+     <header className="header" id="header">
+        <Banner/>
+      </header>
+
       <section className="section category">
         <div className="cat-center">
         {
