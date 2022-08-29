@@ -6,7 +6,7 @@ const Products = ({ name, colors, price, percent, image }) => {
     <div className="product-item">
       <div className="overlay">
         <a href="/" className="product-thumb">
-          <img src={image} alt="" />
+          <img src={image} alt="Imagem do Produto" />
         </a>
         <span
           className="discount"
@@ -15,7 +15,7 @@ const Products = ({ name, colors, price, percent, image }) => {
       </div>
       <div className="product-info">
         <span>{name}</span>
-        <a href="/">{colors}</a>
+        <a href="/product-details">{colors}</a>
         <h4
           className="priceB4"
           style={

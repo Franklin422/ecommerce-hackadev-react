@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./components/cart/Cart";
 import Home from "./components/home/Home";
 import Login from "./components/login/Login";
+import ProductDetails from "./components/productDetails/ProductDetails";
 import ProductContainer from "./components/products/ProductContainer";
 import Template from "./components/templates/Template";
 
@@ -24,6 +25,14 @@ function App() {
             element={
               <Template>
                 <ProductContainer />
+              </Template>
+            }
+          />
+          <Route
+            path="/product-details"
+            element={
+              <Template>
+                <ProductDetails />
               </Template>
             }
           />
